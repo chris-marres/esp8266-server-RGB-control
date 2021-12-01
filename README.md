@@ -8,6 +8,12 @@ The server listens and replies to the following url formats.
 
 * http://[address]/RGB?Red=[RedValue]&Green=[GreenValue]&Blue=[BlueValue]&Group=[GroupIndex] -> Turns all the led's in group "GroupIndex" to the color (RedValue, GreenValue, BlueValue).
 
+### App
+The app has a really simple interface. It allows you to pick a color from the color wheel or select an exact RBG value from the text boxes. After that all you need to do is press any of the offered buttons and watch the led groups come to life. 
+
+### Setup
+In order for the app to work properly you need to setup a static local IP for the ESP8266 board on your home router. 
+
 ### Notes
 In order for the code to actually work, you need to do a few adjustments.
 * Change the ssid and password variables in order for the server to connect to the local wifi network.

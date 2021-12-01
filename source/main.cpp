@@ -26,8 +26,8 @@ vector<vector<int>> Groups = {
 };
 
 /* WIFI settings */
-const char* ssid = "Mairh";  // Enter SSID here
-const char* password = "fgrsfs2u4fg2af4h";  //Enter Password here
+const char* ssid = "SSID";  // Enter SSID here
+const char* password = "PASSWORD";  //Enter Password here
 
 void test(){
   for (int i = 0; i < TOTAL_LEDS; i++){

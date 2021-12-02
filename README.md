@@ -4,12 +4,12 @@ This project was developed using the platfromIO extension of Visual Studio Code.
 
 ### HTTP Requests
 The server listens and replies to the following url formats.
-* http://[address]/ -> (200, "text/plain", "Someone Connected!!")
+1. http://[address]/ -> (200, "text/plain", "Someone Connected!!")
 
-* http://[address]/RGB?Red=[RedValue]&Green=[GreenValue]&Blue=[BlueValue]&Group=[GroupIndex] -> Turns all the led's in group "GroupIndex" to the color (RedValue, GreenValue, BlueValue).
+2. http://[address]/RGB?Red=[RedValue]&Green=[GreenValue]&Blue=[BlueValue]&Group=[GroupIndex] -> Turns all the led's in group "GroupIndex" to the color (RedValue, GreenValue, BlueValue).
 
 ### App
-The app has a really simple interface. It allows you to pick a color from the color wheel or select an exact RBG value from the text boxes. After that all you need to do is press any of the offered buttons and watch the led groups come to life. 
+The app has a really simple interface. It allows you to pick a color from the color wheel or select an exact RBG value from the text boxes. After that all you need to do is press any of the offered buttons and watch the led groups come to life. You can also adjust the intesity of every led through the slider. The slider feature uses the http request number two with a percentage of the RGB values based on the value of the slider (from 0 to 1).
 
 ### Setup
 In order for the app to work properly you need to setup a static local IP for the ESP8266 board on your home router. 

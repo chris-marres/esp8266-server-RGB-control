@@ -8,6 +8,11 @@ The server listens and replies to the following url formats.
 
 2. http://[address]/RGB?Red=[RedValue]&Green=[GreenValue]&Blue=[BlueValue]&Group=[GroupIndex] -> Turns all the led's in group "GroupIndex" to the color (RedValue, GreenValue, BlueValue).
 
+Where:
+* [address] is the local IP of the board.
+* [RedValue], [GreenValue], [BlueValue] are the RGB values(0-255).
+* [GroupIndex] is the group of led's that are going to be affected(Group 0 is every led).
+
 ### App
 
 <img src="images/app.jpg" width="250" height="450">
@@ -15,7 +20,7 @@ The server listens and replies to the following url formats.
 The app has a really simple interface. It allows you to pick a color from the color wheel or select an exact RBG value from the text boxes. After that all you need to do is press any of the offered buttons and watch the led groups come to life. You can also adjust the intesity of every led through the slider. The slider feature uses the http request number two with a percentage of the RGB values based on the value of the slider (from 0 to 1).
 
 ### Setup
-In order for the app to work properly you need to setup a static local IP for the ESP8266 board on your home router. 
+In order for the app to work properly you need to setup a static local IP for the ESP8266 board (it's MAC address) on your home router. 
 
 ### Notes
 In order for the code to actually work, you need to do a few adjustments.
